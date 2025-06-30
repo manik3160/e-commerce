@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - eCart Online Shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/fashion.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo-section">
+                    <a href="#" class="logo">eCart</a>
+                    <div class="logo-tagline">Explore Plus</div>
+                </div>
+                
+                <div class="search-section">
+                    <input type="text" class="search-box" placeholder="Search fashion items, brands and more">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                
+                <div class="header-actions">
+                    <button class="header-btn">
+                        <i class="fa-solid fa-circle-user"></i><a href="login.html">Login</a>
+                    </button>
+                    <button class="header-btn">
+                        <i class="fa-solid fa-star"></i> Become a Seller
+                    </button>
+                    <button class="header-btn">
+                        ⋯ More
+                    </button>
+                    <button class="header-btn">
+                        <i class="fa-solid fa-cart-shopping"></i> Cart
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <div class="nav-container">
+            <a href="#" class="nav-item"><i class="fa-solid fa-mobile-screen-button"></i> Electronics</a>
+            <a href="#" class="nav-item active"><i class="fa-solid fa-shirt"></i> Fashion</a>
+            <a href="home.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-plane-departure"></i> Travel</a>
+            <a href="#" class="nav-item">💄 Beauty, Toys & More</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-lemon"></i> Grocery</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-book"></i> Books</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-capsules"></i> Medicines</a>
+        </div>
+    </nav>
+
+    <!-- Fashion Hero Section -->
+    <section class="fashion-hero">
+        <div class="hero-content">
+            <h1>Fashion Forward</h1>
+            <p>Discover the latest trends and timeless classics for every style</p>
+            <a href="#products" class="hero-cta">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <span class="filter-label">Sort by:</span>
+                <select class="filter-select">
+                    <option>Popularity</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest First</option>
+                    <option>Customer Rating</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Gender:</span>
+                <select class="filter-select">
+                    <option>All</option>
+                    <option>Men</option>
+                    <option>Women</option>
+                    <option>Kids</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Price Range:</span>
+                <select class="filter-select">
+                    <option>All Prices</option>
+                    <option>Under ₹500</option>
+                    <option>₹500 - ₹1,000</option>
+                    <option>₹1,000 - ₹2,500</option>
+                    <option>Above ₹2,500</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">Brand:</span>
+                <select class="filter-select">
+                    <option>All Brands</option>
+                    <option>Nike</option>
+                    <option>Adidas</option>
+                    <option>Zara</option>
+                    <option>H&M</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Categories -->
+    <section class="fashion-categories">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">Shop by Category</div>
+                <div class="section-subtitle">Find your perfect style</div>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fa-solid fa-shirt"></i></div>
+                    <div class="category-name">Men's Clothing</div>
+                    <div class="category-count">2,500+ items</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👗</div>
+                    <div class="category-name">Women's Clothing</div>
+                    <div class="category-count">3,200+ items</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👟</div>
+                    <div class="category-name">Footwear</div>
+                    <div class="category-count">1,800+ items</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👶</div>
+                    <div class="category-name">Kids Fashion</div>
+                    <div class="category-count">1,200+ items</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👜</div>
+                    <div class="category-name">Bags & Accessories</div>
+                    <div class="category-count">900+ items</div>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⌚</div>
+                    <div class="category-name">Watches</div>
+                    <div class="category-count">650+ items</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section" id="products">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-title">Trending Now</div>
+                <div class="section-subtitle">Most popular fashion items this week</div>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/cotton.jpg" >
+                        <div class="product-badge">Hot</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Premium Cotton T-Shirt</div>
+                        <div class="product-brand">Brand: StyleCo</div>
+                        <div class="product-price">
+                            <span class="current-price">₹599</span>
+                            <span class="original-price">₹1,199</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.4 ⭐</div>
+                            <div class="rating-count">(1,234)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/floral dress.jpg" >
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Floral Summer Dress</div>
+                        <div class="product-brand">Brand: Elegance</div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,299</span>
+                            <span class="original-price">₹2,199</span>
+                            <span class="discount">41% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.6 ⭐</div>
+                            <div class="rating-count">(856)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/sneaker.jpg" alt="">
+                        <div class="product-badge">Sale</div>
+                    
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Running Sneakers</div>
+                        <div class="product-brand">Brand: SportMax</div>
+                        <div class="product-price">
+                            <span class="current-price">₹2,499</span>
+                            <span class="original-price">₹4,999</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.2 ⭐</div>
+                            <div class="rating-count">(432)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/slimfitjean.jpg" alt="">
+                        <div class="product-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Slim Fit Jeans</div>
+                        <div class="product-brand">Brand: DenimPro</div>
+                        <div class="product-price">
+                            <span class="current-price">₹899</span>
+                            <span class="original-price">₹1,799</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.3 ⭐</div>
+                            <div class="rating-count">(967)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/disignerhandbag.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Designer Handbag</div>
+                        <div class="product-brand">Brand: LuxeCraft</div>
+                        <div class="product-price">
+                            <span class="current-price">₹1,899</span>
+                            <span class="original-price">₹3,799</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.5 ⭐</div>
+                            <div class="rating-count">(523)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/watch.jpg" alt="">
+                        <div class="product-badge">Trending</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Classic Wrist Watch</div>
+                        <div class="product-brand">Brand: TimeZone</div>
+                        <div class="product-price">
+                            <span class="current-price">₹3,299</span>
+                            <span class="original-price">₹5,999</span>
+                            <span class="discount">45% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.4 ⭐</div>
+                            <div class="rating-count">(756)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/jacket.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Winter Jacket</div>
+                        <div class="product-brand">Brand: WarmWear</div>
+                        <div class="product-price">
+                            <span class="current-price">₹2,799</span>
+                            <span class="original-price">₹4,999</span>
+                            <span class="discount">44% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.1 ⭐</div>
+                            <div class="rating-count">(345)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="../images/sunglasses.jpg" alt="">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Stylish Sunglasses</div>
+                        <div class="product-brand">Brand: ShadeMax</div>
+                        <div class="product-price">
+                            <span class="current-price">₹799</span>
+                            <span class="original-price">₹1,599</span>
+                            <span class="discount">50% OFF</span>
+                        </div>
+                        <div class="product-rating">
+                            <div class="rating-badge">4.0 ⭐</div>
+                            <div class="rating-count">(289)</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Cancellation & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2007-2025 eCart.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/fashion.js"></script>
+</body>
+</html>
