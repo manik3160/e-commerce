@@ -41,7 +41,7 @@
                 cartCount++;
                 document.getElementById('cartCount').textContent = cartCount;
                 
-                const productName = this.querySelector('.product-name').textContent;
+            
                 
                 // Show notification
                 const notification = document.createElement('div');
@@ -87,3 +87,4 @@
         `;
 
         document.head.appendChild(animationStyles);
+
