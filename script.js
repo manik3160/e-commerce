@@ -15,10 +15,7 @@
 
         function toggleCart() {
             if (cartCount === 0) {
-                alert('Your cart is empty\nStart shopping now!');
-            } else {
-                alert(`You have ${cartCount} item(s) in your cart`);
-            }
+             
         }
 
         // Search functionality
@@ -88,4 +85,5 @@
                 to { transform: translateX(100%); opacity: 0; }
             }
         `;
+
         document.head.appendChild(animationStyles);
