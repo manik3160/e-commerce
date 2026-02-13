@@ -88,3 +88,5 @@
 
         document.head.appendChild(animationStyles);
 
+
+            }
