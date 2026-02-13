@@ -1,4 +1,7 @@
-
+        alert('Your cart is empty.');
+    } else {
+        alert(`You have ${cartCount} items in your cart.`);
+    }
         let cartCount = 0;
 
         function viewCategory(category) {
