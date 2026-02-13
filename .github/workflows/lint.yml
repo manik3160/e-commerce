@@ -1,0 +1,17 @@
+name: Lint Error
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Linting Failed
+      run: |
+        echo "Running linter..."
+        exit 2
