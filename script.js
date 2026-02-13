@@ -1,4 +1,8 @@
-
+        alert('Your cart is empty.');
+    } else {
+        // Logic to toggle cart visibility or state
+        alert('Toggling cart view.');
+        // Example: document.getElementById('cart').classList.toggle('visible');
         let cartCount = 0;
 
         function viewCategory(category) {
