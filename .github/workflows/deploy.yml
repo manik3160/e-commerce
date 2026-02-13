@@ -1,0 +1,17 @@
+name: Deploy Error
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Failed Deployment
+      run: |
+        echo "Deployment starting..."
+        exit 127
